@@ -1,9 +1,3 @@
-ai-school-website/
-├── index.html  <-- 先ほど作ったHTMLファイル
-├── README.md
-└── assets/    <-- 画像やCSSを分けたい場合に使用
-
---- README.md の例 ---
 # AIと未来をつくろう｜公式サイト
 
 このリポジトリは、千葉県松戸市根木内で開催する地域AIスクール「AIと未来をつくろう」の公式サイトです。
