@@ -5,79 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>AIと未来をつくろう｜地域AIスクール</title>
   <meta name="description" content="千葉県松戸市根木内で開講する地域AIスクール。小学生から社会人まで、AIの基礎から実践までを無料で学べます。毎週土曜13:00〜17:00、オフライン推奨（大学生・社会人のみオンライン可）。" />
-  <style>
-    :root{
-      --bg:#eafaf5;       /* ミントグリーン背景 */
-      --card:#ffffff;     /* 白いカード */
-      --txt:#0b1f1a;      /* 文字色（濃い緑寄りの黒） */
-      --sub:#2b5e53;      /* サブテキスト */
-      --muted:#2dd4bf;    /* ミント系アクセント */
-      --acc:#10b981;      /* エメラルド系強調 */
-      --line:#cfece3;     /* 薄い境界線 */
-      --shadow:0 8px 24px rgba(16,185,129,.08);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--txt);font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,"Noto Sans JP","Hiragino Kaku Gothic ProN","Meiryo",sans-serif;line-height:1.7}
-    a{color:#0f766e;text-decoration:none}
-    a:hover{opacity:.9}
-    .container{max-width:1100px;margin:0 auto;padding:0 20px}
-
-    /* header */
-    header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:saturate(150%) blur(8px);border-bottom:1px solid var(--line)}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:10px;align-items:center}
-    .logo{width:36px;height:36px;border-radius:10px;background:linear-gradient(135deg,var(--muted),var(--acc));box-shadow:var(--shadow)}
-    .brand h1{font-size:18px;margin:0}
-    nav a{margin-left:18px;font-size:14px}
-
-    /* hero */
-    .hero{padding:72px 0 48px;border-bottom:1px solid var(--line);background:
-      radial-gradient(1200px 600px at 80% -20%,rgba(16,185,129,.12),transparent 60%),
-      radial-gradient(900px 500px at -10% 10%,rgba(45,212,191,.18),transparent 55%)}
-    .hero h2{font-size:38px;margin:0 0 10px;letter-spacing:.02em}
-    .hero p{color:var(--sub);margin:0 0 20px}
-    .badges{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0 24px}
-    .badge{border:1px solid var(--line);background:#fff;padding:6px 10px;border-radius:999px;font-size:12px;box-shadow:var(--shadow)}
-
-    /* common */
-    section{padding:44px 0;border-bottom:1px solid var(--line)}
-    h3{font-size:24px;margin:0 0 14px}
-    .grid{display:grid;gap:16px}
-    @media(min-width:800px){.grid.cols-3{grid-template-columns:repeat(3,1fr)}.grid.cols-2{grid-template-columns:repeat(2,1fr)}}
-    .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
-    .card h4{margin:0 0 8px}
-    .meta{color:var(--sub);font-size:14px}
-    .pill{display:inline-block;background:#f4fffb;border:1px solid var(--line);padding:4px 10px;border-radius:999px;font-size:12px;margin-right:6px}
-    .list{margin:10px 0 0;padding-left:18px}
-    .list li{margin:6px 0}
-    .accent{color:#065f46}
-    .muted{color:var(--sub)}
-
-    /* buttons */
-    .cta{display:flex;gap:12px;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--txt);font-weight:600;box-shadow:var(--shadow)}
-    .btn.primary{background:linear-gradient(135deg,var(--acc),var(--muted));color:#06221c;border:none}
-    .btn.secondary{background:#f3fbf7}
-
-    /* faq & footer */
-    .faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;box-shadow:var(--shadow)}
-    .faq summary{cursor:pointer;font-weight:600}
-    .footer{padding:40px 0;color:var(--sub);font-size:14px}
-  </style>
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"EducationalOrganization",
-    "name":"AIと未来をつくろう",
-    "address":{"@type":"PostalAddress","addressLocality":"松戸市","addressRegion":"千葉県"},
-    "areaServed":"Japan",
-    "url":"",
-    "description":"地域AIスクール。小学生〜社会人対象。毎週土曜13:00-17:00、参加無料。オフライン推奨（大学生・社会人のみオンライン可）。"
-  }
-  </script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- header -->
   <header>
     <div class="container nav">
       <div class="brand">
@@ -96,6 +28,7 @@
   </header>
 
   <main>
+    <!-- hero -->
     <section class="hero">
       <div class="container">
         <h2>地域で学ぶ、AIの第一歩。</h2>
@@ -108,12 +41,13 @@
           <span class="badge">オンラインは大学生・社会人のみ</span>
         </div>
         <div class="cta">
-          <a class="btn primary" href="#join"><span>参加申し込み（Googleフォーム）</span></a>
-          <a class="btn secondary" href="#join"><span>受講管理はLINEグループで運用</span></a>
+          <a class="btn primary" href="#">参加申し込み（Googleフォーム）</a>
+          <a class="btn secondary" href="#">受講管理はLINEグループで運用</a>
         </div>
       </div>
     </section>
 
+    <!-- about -->
     <section id="about">
       <div class="container grid cols-2">
         <div class="card">
@@ -136,6 +70,7 @@
       </div>
     </section>
 
+    <!-- features -->
     <section id="features">
       <div class="container">
         <h3>特徴</h3>
@@ -156,6 +91,7 @@
       </div>
     </section>
 
+    <!-- curriculum -->
     <section id="curriculum">
       <div class="container">
         <h3>カリキュラム</h3>
@@ -200,21 +136,25 @@
       </div>
     </section>
 
+    <!-- instructors -->
     <section id="instructors">
       <div class="container">
         <h3>講師紹介（3名）</h3>
         <div class="grid cols-3">
           <div class="card">
+            <img src="assets/images/A.jpg" alt="講師A">
             <h4>A</h4>
             <p class="meta">エンジニア歴20年</p>
             <p class="muted">フルスタック開発・AI活用の実務経験が豊富。現場視点で学びをナビゲート。</p>
           </div>
           <div class="card">
+            <img src="assets/images/B.jpg" alt="講師B">
             <h4>B</h4>
             <p class="meta">大学生／AIを専門に研究</p>
             <p class="muted">生成AI・機械学習のアカデミック知見をわかりやすく解説。</p>
           </div>
           <div class="card">
+            <img src="assets/images/C.jpg" alt="講師C">
             <h4>C</h4>
             <p class="meta">大学生／小中向けの指導実績あり</p>
             <p class="muted">はじめての子でも安心できる、楽しい学びの進行が得意。</p>
@@ -223,78 +163,18 @@
       </div>
     </section>
 
+    <!-- join -->
     <section id="join">
       <div class="container grid cols-2">
         <div class="card">
           <h3>参加方法</h3>
           <ol class="list">
-            <li>下のボタンから <b>Googleフォーム</b> で申し込み（オフライン／オンラインを選択）</li>
+            <li>Googleフォームで申し込み（オフライン／オンラインを選択）</li>
             <li>メールで当日の案内を受け取る</li>
             <li>当日13:00に会場またはZoomへアクセス</li>
           </ol>
-          <p class="meta">※オンライン参加は <b>大学生・社会人のみ</b> 受け付けています。小中学生は会場参加をお願いします。</p>
-          <div class="cta" style="margin-top:10px">
-            <a class="btn primary" id="applyBtn" href="#" target="_blank" rel="noopener">Googleフォームで申し込む</a>
-            <a class="btn" id="lineBtn" href="#" target="_blank" rel="noopener">LINEグループ（申込後に招待）</a>
-          </div>
+          <p class="meta">※オンライン参加は <b>大学生・社会人のみ</b> 受け付け。小中学生は会場参加のみ。</p>
         </div>
         <div class="card">
           <h3>運営と連絡</h3>
-          <p>出欠・資料配布・質問対応は、<b>LINEグループ</b>で行います。Googleフォームの回答確認後、参加区分に応じて招待リンクをお送りします。</p>
-          <ul class="list">
-            <li>連絡手段：LINEグループ（必須）</li>
-            <li>資料配布：Google Drive 共有リンク</li>
-            <li>オンライン：Zoom（大学生・社会人のみ）</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="faq" class="faq">
-      <div class="container">
-        <h3>FAQ</h3>
-        <div class="grid">
-          <details>
-            <summary>PCがなくても参加できますか？</summary>
-            <p>PCは貸出します。Googleアカウント、ChatGPTのアカウントがあるとご自宅でも成果物の確認ができますので推奨です。</p>
-          </details>
-          <details>
-            <summary>途中参加は可能ですか？</summary>
-            <p>はい、13:00〜17:00の時間内であればいつでも参加・退出できます。</p>
-          </details>
-          <details>
-            <summary>小中学生のオンライン参加はできますか？</summary>
-            <p>原則できません。安全と体験品質の観点から会場参加のみ受け付けています。</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="access">
-      <div class="container">
-        <h3>アクセス</h3>
-        <p class="muted">拠点：千葉県松戸市根木内（詳細住所は申込後にご案内）</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div>© 2025 <b>AIと未来をつくろう</b>｜千葉県松戸市根木内｜ボランティア運営</div>
-      <div class="muted">軽量な1ファイル構成です。</div>
-    </div>
-  </footer>
-
-  <script>
-    // ←ここを書き換えてください（実URLに差し替え）
-    const GOOGLE_FORM_URL = "#"; // 例: https://forms.gle/xxxxxxxx
-    const LINE_GROUP_URL  = "#"; // 申込後に案内するなら # のままでOK
-
-    const applyBtn = document.getElementById('applyBtn');
-    const lineBtn  = document.getElementById('lineBtn');
-    if (GOOGLE_FORM_URL && GOOGLE_FORM_URL !== '#') applyBtn.href = GOOGLE_FORM_URL;
-    if (LINE_GROUP_URL && LINE_GROUP_URL !== '#') lineBtn.href = LINE_GROUP_URL;
-  </script>
-</body>
-</html>
-
+          <p>出欠・資料配布・質問対応は、<b>LINEグループ</b>で行います。Googleフォームの回答
