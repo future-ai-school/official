@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>大学生・社会人向け 生成AIスクール</title>
+  <!-- 外部スタイルシートを参照（同ディレクトリに style.css を配置） -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <h1>生成AIスクール｜大学生・社会人</h1>
+      </div>
+      <nav>
+        <a href="#about">概要</a>
+        <a href="#curriculum">カリキュラム</a>
+        <a href="#stack">技術</a>
+        <a href="#apply">参加方法</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>AIを“使う”から“作る”へ。（プロ向けコース）</h2>
+      <p class="muted">講義10分＋実習50分／週1回×全12回。RAG・エージェント・プロンプト設計を、Pythonとクラウド環境で体験します。</p>
+      <div class="badges">
+        <span class="badge">地域ボランティア／無料</span>
+        <span class="badge">ハンズオン中心</span>
+        <span class="badge">GitHub・Docker・CI/CD</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#curriculum">カリキュラムを見る</a>
+        <a class="btn secondary" href="#apply">参加方法</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h3>AIとは／AIと生きる社会（講義10分）</h3>
+        <ul class="list">
+          <li><strong>AIの基本原理</strong>：学習と生成、得意/不得意の整理</li>
+          <li><strong>社会実装</strong>：教育・医療・金融・製造の事例</li>
+          <li><strong>リスク</strong>：バイアス、著作権、プライバシー、雇用への影響</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>到達目標</h3>
+        <ul class="list">
+          <li>プロンプト設計で出力品質を改善できる</li>
+          <li>RAGで手元データを参照するチャットを作れる</li>
+          <li>関数呼び出しで簡易エージェントを構成できる</li>
+          <li>GitHub・Docker・Actionsで再現性ある開発ができる</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum">
+    <div class="container">
+      <h3>カリキュラム（全12回）</h3>
+      <div class="grid cols-3">
+        <div class="card">
+          <h4>1-2 基礎と環境</h4>
+          <ul class="list">
+            <li>生成AIの基本・ユースケース</li>
+            <li>Python最速入門／仮想環境</li>
+            <li>プロンプト基本（役割・制約・評価）</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>3-4 プロンプト設計</h4>
+          <ul class="list">
+            <li>手順化／Few-shot／思考の可視化</li>
+            <li>出力評価と改善ループ</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>5-6 RAG 入門</h4>
+          <ul class="list">
+            <li>取り込み→ベクトル検索→回答生成</li>
+            <li>精度向上：分割・メタデータ・再ランク</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>7-8 エージェント</h4>
+          <ul class="list">
+            <li>関数/ツール呼び出し</li>
+            <li>安全設計の基本</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>9-10 開発フロー</h4>
+          <ul class="list">
+            <li>GitHub：PR/レビュー/Issues</li>
+            <li>Docker化／ActionsでCI/CD</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>11-12 仕上げ・発表</h4>
+          <ul class="list">
+            <li>RAG＋関数呼び出し統合</li>
+            <li>ライトニングトーク＆フィードバック</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stack">
+    <div class="container grid cols-3">
+      <div class="card">
+        <h3>技術スタック</h3>
+        <ul class="list">
+          <li>Python / FastAPI</li>
+          <li>LangChain / transformers</li>
+          <li>FAISS or Chroma（ベクトル検索）</li>
+          <li>Vercel / Render / Docker</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>実習テーマ例</h3>
+        <ul class="list">
+          <li>社内文書RAGチャット</li>
+          <li>議事録要約＋検索UI</li>
+          <li>タスク補助エージェント（時刻/予定/ToDo）</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>前提と配慮</h3>
+        <ul class="list">
+          <li>未経験歓迎：ブリッジ教材あり</li>
+          <li>8GBメモリ推奨（クラウド代替可）</li>
+          <li>APIキー不要のローカル構成も紹介</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply">
+    <div class="container grid cols-2">
+      <div class="card">
+        <h3>参加方法</h3>
+        <ul class="list">
+          <li>対象：大学生・社会人（無料）</li>
+          <li>形式：現地＋オンライン（ハイブリッド）</li>
+          <li>日程：週1回 × 全12回（各60分）</li>
+          <li>持ち物：ノートPC・GitHubアカウント</li>
+        </ul>
+        <div class="cta">
+          <a class="btn primary" href="#">申し込み（準備中）</a>
+        </div>
+      </div>
+      <div class="card faq">
+        <h3>FAQ</h3>
+        <details>
+          <summary>プログラミング未経験でも大丈夫？</summary>
+          <div class="meta">本コースはプロ向けなので未経験では受講できません。</div>
+        </details>
+        <details>
+          <summary>APIキーは必要？</summary>
+          <div class="meta">本コースでオンライン受講の場合は必須となります。</div>
+        </details>
+        <details>
+          <summary>環境要件は？</summary>
+          <div class="meta">オンラインではVSCodeがインストール/実行できればOKです。</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="container">
+      <div>© 2025 生成AIスクール（地域ボランティア）</div>
+    </div>
+  </section>
+</body>
+</html>
